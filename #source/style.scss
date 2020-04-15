@@ -456,3 +456,13 @@ nav{
 		color: #999;
 	}
 }
+
+
+footer {
+	padding: 14px 23px 39px 23px;
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
