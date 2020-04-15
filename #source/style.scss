@@ -307,16 +307,16 @@ nav{
 	background-color: #070716;
 }
 
-.choise__min{
+.white__min{
 	background-color: #fff;
 	color: #000;
 }
 
-.choise__big{
+.white__big{
 	color: #fff;
 }
 
-.choise__subtitle{
+.white__subtitle{
 	color: #fff;
 }
 
@@ -396,4 +396,63 @@ nav{
 
 .require__desc{
 	color: #1ca8c3;
+}
+
+.world{
+	padding: 55px 0 50px;
+	background: url('../img/all-world_bg.jpg') center center/cover no-repeat;
+	min-height: 717px;
+}
+
+.world__link{
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 485px;
+	a{
+		color: #1fbad6;
+	}
+}
+
+.footer {}
+
+.footer__links {
+	width: 430px;
+	margin: 0 auto;
+	&:before{
+		content: '';
+		display: block;
+		max-width: 300px;
+		height: 3px;
+		background-color: #1fbad6;
+		margin: 15px auto;
+	}
+}
+
+.footer__row-main {
+	justify-content: space-between;
+	display: flex;
+}
+
+.footer-main__link {
+	font-size: 15px;
+	text-transform: uppercase;
+	a{
+		color: #000;
+	}
+}
+
+.footer__row-extra {
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-extra__link {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: lighter;
+	a{
+		color: #999;
+	}
 }
