@@ -1,14 +1,14 @@
+	@import 'mixins';
 
+
+*{
+	font-family: Roboto, sans-serif;
+} 
 @mixin btn_hover() {
 	&:hover{
 		background-color: #02b8d0;
 	}
 }
-
-*{
-	font-family: Roboto, sans-serif;
-}
-
 header{
 	position: relative;
 }
@@ -199,12 +199,6 @@ nav{
 	justify-content: center;
 	align-self: center;
 	margin-right: 26px;
-}
-
-@media (max-width: 450px) {
-	.advantages__img{
-		display: none;
-	}
 }
 
 .advantages__title{
@@ -466,3 +460,5 @@ footer {
 		}
 	}
 }
+
+@import 'media';
