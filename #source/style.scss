@@ -1,5 +1,8 @@
-	@import 'mixins';
-
+@mixin btn_hover() {
+	&:hover{
+		background-color: #02b8d0;
+	}
+}
 
 *{
 	font-family: Roboto, sans-serif;
@@ -461,4 +464,13 @@ footer {
 	}
 }
 
-@import 'media';
+@media (max-width: 1200px) {
+	.menu{
+		&__item{
+			padding-right: 18px;
+		}
+	}
+	.menu__link{
+		font-size: 13px;
+	}
+}
