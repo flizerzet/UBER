@@ -7,16 +7,16 @@
 *{
 	font-family: Roboto, sans-serif;
 } 
-@mixin btn_hover() {
-	&:hover{
-		background-color: #02b8d0;
-	}
-}
+ 
 header{
 	position: relative;
 }
 
 nav{
+	position: fixed; 
+	width: 100%; 
+	background-color: #212121;
+	z-index: 2;
 	height: 50px;
 	background-color: #212121;
 }
@@ -27,6 +27,10 @@ nav{
 	display: flex;
 	justify-content: space-between;
 	list-style-type: none;
+}
+
+.hamburger{
+	display: none; 
 }
 
 .menu__item{
@@ -42,7 +46,8 @@ nav{
 	color: #fff;
 	font-weight: 300;
 	&:hover{
-		color: #fff;
+		color: #47ddf9;
+		text-decoration: none;
 	}
 }
 
@@ -50,6 +55,7 @@ nav{
 	background-color: rgba(0, 0, 0, .6);
 	height: 84px;
 	position: absolute;
+	top: 50px;
 	width: 100%;
 }
 
@@ -98,6 +104,7 @@ nav{
 	border-radius: 4px;
 	@include btn_hover();
 }
+
 
 .promo{
 	min-height: 800px;
@@ -183,10 +190,6 @@ nav{
 	font-size: 17px;
 	color: #222;
 	text-align: center;
-}
-
-.advantages__info{
-	width: 343px;
 }
 
 .advantages__item{
@@ -325,7 +328,7 @@ nav{
 	text-align: center;
 }
 
-.choise_descr {
+.choise__descr {
 	margin-top: 250px;
 	text-align: center;
 	color: #222222;
@@ -450,7 +453,7 @@ nav{
 	text-transform: uppercase;
 	font-weight: lighter;
 	a{
-		color: #999;
+		color: #666;
 	}
 }
 
@@ -463,14 +466,8 @@ footer {
 		}
 	}
 }
-
-@media (max-width: 1200px) {
-	.menu{
-		&__item{
-			padding-right: 18px;
-		}
-	}
-	.menu__link{
-		font-size: 13px;
-	}
+.xs-visible{
+	display: none;
 }
+
+@import 'media';
